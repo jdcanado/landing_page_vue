@@ -1,2 +1,1 @@
-# landing_page_vue
-Created with CodeSandbox
+# comandapp_vue_vuetify_mongodb
