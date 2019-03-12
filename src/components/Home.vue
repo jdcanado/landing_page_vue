@@ -20,16 +20,16 @@ export default {
     return {
       items: [
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
+          src: "http://wowslider.net/local-sliders/demo-5/data1/images/25h.jpg"
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg"
+          src: "http://wowslider.net/local-sliders/demo-5/data1/images/83h.jpg"
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg"
+          src: "http://wowslider.net/local-sliders/demo-5/data1/images/88h.jpg"
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg"
+          src: "http://wowslider.net/local-sliders/demo-5/data1/images/114h.jpg"
         }
       ]
     };

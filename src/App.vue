@@ -5,17 +5,17 @@
         <v-list dense>
           <v-list-tile @click="$vuetify.goTo('#home');">
             <v-list-tile-action> <v-icon>home</v-icon> </v-list-tile-action>
-            <v-list-tile-content> LINK ONE </v-list-tile-content>
+            <v-list-tile-content> HOME </v-list-tile-content>
           </v-list-tile>
           <v-list-tile @click="$vuetify.goTo('#sobre');">
             <v-list-tile-action>
               <v-icon>touch_app</v-icon>
             </v-list-tile-action>
-            <v-list-tile-content> LINK TWO </v-list-tile-content>
+            <v-list-tile-content> SOBRE </v-list-tile-content>
           </v-list-tile>
           <v-list-tile @click="$vuetify.goTo('#sobre');">
             <v-list-tile-action> <v-icon>settings</v-icon> </v-list-tile-action>
-            <v-list-tile-content> LINK THREE </v-list-tile-content>
+            <v-list-tile-content> PRODUTOS </v-list-tile-content>
           </v-list-tile>
         </v-list>
       </v-navigation-drawer>
@@ -26,9 +26,9 @@
         <v-toolbar-title>Layout 1</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items class="hidden-sm-and-down">
-          <v-btn @click="$vuetify.goTo('#home');" flat>Link One</v-btn>
-          <v-btn @click="$vuetify.goTo('#sobre');" flat>Link Two</v-btn>
-          <v-btn @click="$vuetify.goTo('#sobre');" flat>Link Three</v-btn>
+          <v-btn @click="$vuetify.goTo('#home');" flat>Home</v-btn>
+          <v-btn @click="$vuetify.goTo('#sobre');" flat>Sobre</v-btn>
+          <v-btn @click="$vuetify.goTo('#sobre');" flat>Produtos</v-btn>
         </v-toolbar-items>
       </v-toolbar>
       <v-content><Home /><Sobre /></v-content>

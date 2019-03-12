@@ -7,7 +7,7 @@
             <v-card-title class="headline mb-0"> Sobre </v-card-title>
           </v-card>
         </v-flex>
-        <v-flex xs6 align-end class="pr-3">
+        <v-flex xs12 sm6>
           <v-card>
             <v-card-title class="headline mb-0">Subtítulo 1</v-card-title>
             <v-divider />
@@ -25,7 +25,7 @@
             </v-card-actions>
           </v-card>
         </v-flex>
-        <v-flex xs6 align-end class="pr-3">
+        <v-flex xs12 sm6>
           <v-card>
             <v-card-title class="headline mb-0">Subtítulo 2</v-card-title>
             <v-divider />
