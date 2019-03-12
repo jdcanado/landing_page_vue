@@ -1,12 +1,29 @@
 {
   "version": 1,
-  "name": "landing_page_vue",
-  "builds": [{ "src": "package.json", "use": "@now/static-build" }],
+  "name": "csb-4kk6prr6w",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ],
   "routes": [
-    { "src": "^/js/(.*)", "dest": "/js/$1" },
-    { "src": "^/css/(.*)", "dest": "/css/$1" },
-    { "src": "^/img/(.*)", "dest": "/img/$1" },
-    { "src": ".*", "dest": "/index.html" }
+    {
+      "src": "^/js/(.*)",
+      "dest": "/js/$1"
+    },
+    {
+      "src": "^/css/(.*)",
+      "dest": "/css/$1"
+    },
+    {
+      "src": "^/img/(.*)",
+      "dest": "/img/$1"
+    },
+    {
+      "src": ".*",
+      "dest": "/index.html"
+    }
   ],
   "alias": "confiatrucks.now.sh"
 }
