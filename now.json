@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "name": "landing-page-vue-vuetify",
+  "name": "landing_page_vue",
   "builds": [{ "src": "package.json", "use": "@now/static-build" }],
   "routes": [
     { "src": "^/js/(.*)", "dest": "/js/$1" },
