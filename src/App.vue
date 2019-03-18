@@ -13,7 +13,7 @@
             </v-list-tile-action>
             <v-list-tile-content> SOBRE </v-list-tile-content>
           </v-list-tile>
-          <v-list-tile @click="$vuetify.goTo('#sobre');">
+          <v-list-tile @click="$vuetify.goTo('#produtos');">
             <v-list-tile-action> <v-icon>settings</v-icon> </v-list-tile-action>
             <v-list-tile-content> PRODUTOS </v-list-tile-content>
           </v-list-tile>
@@ -28,10 +28,10 @@
         <v-toolbar-items class="hidden-sm-and-down">
           <v-btn @click="$vuetify.goTo('#home');" flat>Home</v-btn>
           <v-btn @click="$vuetify.goTo('#sobre');" flat>Sobre</v-btn>
-          <v-btn @click="$vuetify.goTo('#sobre');" flat>Produtos</v-btn>
+          <v-btn @click="$vuetify.goTo('#produtos');" flat>Produtos</v-btn>
         </v-toolbar-items>
       </v-toolbar>
-      <v-content><Home /><Sobre /></v-content>
+      <v-content><Home /><Sobre /><Produtos /></v-content>
       <v-footer class="elevation-12" app>
         <span style="margin-left: 20px">JDCanado&copy; 2019</span>
       </v-footer>
