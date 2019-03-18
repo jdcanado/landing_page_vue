@@ -10,9 +10,7 @@
               <v-layout row wrap>
                 <v-flex v-for="i in 9" :key="i" xs4>
                   <img
-                    :src="
-                      `https://randomuser.me/api/portraits/men/${i + 20}.jpg`
-                    "
+                    :src="`https://picsum.photos/200/300/?image=${i + 20}`"
                     class="image"
                     alt="lorem"
                     width="100%"
