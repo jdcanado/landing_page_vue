@@ -4,7 +4,7 @@
       <v-layout row wrap>
         <v-flex xs12>
           <v-card>
-            <v-card-title class="headline mb-0">Contato</v-card-title>
+            <v-card-title class="headline mb-0">Fale Conosco</v-card-title>
           </v-card>
         </v-flex>
         <v-flex xs12 sm6>
@@ -14,14 +14,14 @@
             <v-card-text>
               <v-container grid-list-md>
                 <v-layout wrap>
-                  <v-flex xs12 sm4>
+                  <v-flex xs12 sm6>
                     <v-text-field label="Nome*" required></v-text-field>
                   </v-flex>
-                  <v-flex xs12 sm4>
-                    <v-text-field label="Sobrenome*" required></v-text-field>
-                  </v-flex>
-                  <v-flex xs12 sm4>
+                  <v-flex xs12 sm6>
                     <v-text-field label="Email*" required></v-text-field>
+                  </v-flex>
+                  <v-flex xs12 sm12>
+                    <v-textarea name="msg_dlg" label="Mensagem*" hint="Deixe sua mensagem" required></v-textarea>
                   </v-flex>
                 </v-layout>
               </v-container>
@@ -37,7 +37,7 @@
 
         <v-flex xs12 sm6>
           <v-card>
-            <v-card-title class="headline mb-0">Fale conosco</v-card-title>
+            <v-card-title class="headline mb-0">Contato</v-card-title>
             <v-divider/>
             <v-card-text>
               <v-container grid-list-md>
