@@ -3,35 +3,35 @@
     <v-app id="inspire">
       <v-navigation-drawer clipped fixed v-model="drawer" app>
         <v-list dense>
-          <v-list-tile @click="$vuetify.goTo('#home');">
+          <v-list-tile @click="drawer = false;$vuetify.goTo('#home');">
             <v-list-tile-action>
               <v-icon>home</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>HOME</v-list-tile-content>
           </v-list-tile>
-          <v-list-tile @click="$vuetify.goTo('#sobre');">
+          <v-list-tile @click="drawer = false;$vuetify.goTo('#sobre');">
             <v-list-tile-action>
               <v-icon>touch_app</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>SOBRE</v-list-tile-content>
           </v-list-tile>
-          <v-list-tile @click="$vuetify.goTo('#produtos');">
+          <v-list-tile @click="drawer = false;$vuetify.goTo('#produtos');">
             <v-list-tile-action>
-              <v-icon>settings</v-icon>
+              <v-icon>category</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>PRODUTOS</v-list-tile-content>
           </v-list-tile>
-          <v-list-tile @click="$vuetify.goTo('#portfolio');">
+          <v-list-tile @click="drawer = false;$vuetify.goTo('#portfolio');">
             <v-list-tile-action>
-              <v-icon>settings</v-icon>
+              <v-icon>view_list</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>PORTFÓLIO</v-list-tile-content>
           </v-list-tile>
-          <v-list-tile @click="$vuetify.goTo('#contato');">
+          <v-list-tile @click="drawer = false;$vuetify.goTo('#faleConosco');">
             <v-list-tile-action>
-              <v-icon>settings</v-icon>
+              <v-icon>contact_mail</v-icon>
             </v-list-tile-action>
-            <v-list-tile-content>CONTATO</v-list-tile-content>
+            <v-list-tile-content>FALE CONOSCO</v-list-tile-content>
           </v-list-tile>
         </v-list>
       </v-navigation-drawer>
@@ -46,7 +46,7 @@
           <v-btn @click="$vuetify.goTo('#sobre');" flat>Sobre</v-btn>
           <v-btn @click="$vuetify.goTo('#produtos');" flat>Produtos</v-btn>
           <v-btn @click="$vuetify.goTo('#portfolio');" flat>Portfólio</v-btn>
-          <v-btn @click="$vuetify.goTo('#contato');" flat>Contato</v-btn>
+          <v-btn @click="$vuetify.goTo('#faleConosco');" flat>Fale Conosco</v-btn>
         </v-toolbar-items>
       </v-toolbar>
       <v-content>
@@ -76,8 +76,9 @@
                     <v-flex xs12 sm12>
                       <v-textarea
                         name="msg"
-                        label="Mensagem"
-                        hint="Deixe sua mensagem"                        
+                        label="Mensagem*"
+                        hint="Deixe sua mensagem"
+                        rows="3"
                         required
                       ></v-textarea>
                     </v-flex>
@@ -86,11 +87,11 @@
               </v-card-text>
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn color="blue darken-1" flat @click="dialog = false;">Fechar
+                <v-btn color="indigo" flat @click="dialog = false;">Fechar
                   <v-spacer/>
                   <v-icon left dark>close</v-icon>
                 </v-btn>
-                <v-btn color="blue darken-1" flat @click="dialog = false;">Enviar
+                <v-btn color="indigo" flat @click="dialog = false;">Enviar
                   <v-icon left dark>send</v-icon>
                 </v-btn>
               </v-card-actions>
