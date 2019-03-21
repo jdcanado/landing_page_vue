@@ -8,7 +8,7 @@
           </v-card>
         </v-flex>
         <v-flex xs12 sm6>
-          <v-card>
+          <v-card height="450">
             <v-card-title class="headline mb-0">Deixe sua mensagem</v-card-title>
             <v-divider/>
             <v-card-text>
@@ -42,7 +42,7 @@
         </v-flex>
 
         <v-flex xs12 sm6>
-          <v-card>
+          <v-card height="450">
             <v-card-title class="headline mb-0">Contato</v-card-title>
             <v-divider/>
             <v-card-text>
@@ -51,7 +51,6 @@
                   <v-flex xs12 sm12>
                     <v-list one-line>
                       <v-list-tile>
-                        <v-list-tile-action/>
                         <v-list-tile-action>
                           <v-icon color="indigo">phone</v-icon>
                         </v-list-tile-action>
@@ -62,7 +61,6 @@
                         </v-list-tile-content>
                       </v-list-tile>
                       <v-list-tile>
-                        <v-list-tile-action/>
                         <v-list-tile-action></v-list-tile-action>
                         <v-list-tile-content>
                           <v-list-tile-title>(17) 4321-1234</v-list-tile-title>
@@ -70,8 +68,9 @@
                         </v-list-tile-content>
                       </v-list-tile>
 
+                      <v-divider inset class="mb-3"/>
+
                       <v-list-tile>
-                        <v-list-tile-action/>
                         <v-list-tile-action>
                           <v-icon color="indigo">mail</v-icon>
                         </v-list-tile-action>
@@ -82,8 +81,9 @@
                         </v-list-tile-content>
                       </v-list-tile>
 
+                      <v-divider inset class="mb-3"/>
+
                       <v-list-tile>
-                        <v-list-tile-action/>
                         <v-list-tile-action>
                           <v-icon color="indigo">location_on</v-icon>
                         </v-list-tile-action>
@@ -95,7 +95,6 @@
                       </v-list-tile>
 
                       <v-list-tile>
-                        <v-list-tile-action/>
                         <v-list-tile-action/>
                         <v-list-tile-content>
                           <v-list-tile-title>Rua José Bonifácio, 215</v-list-tile-title>
