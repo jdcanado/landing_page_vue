@@ -4,32 +4,56 @@
       <v-layout row wrap>
         <v-flex xs12>
           <v-card>
-            <v-card-title class="headline mb-0"> Sobre </v-card-title>
+            <v-card-title class="headline mb-0">Sobre</v-card-title>
           </v-card>
         </v-flex>
-        <v-flex xs12 sm6>
+        <v-flex xs12 sm4>
           <v-card>
-            <v-card-title class="headline mb-0">Subtítulo 1</v-card-title>
-            <v-divider />
-            <v-card-text>{{ card_text }}</v-card-text>
-            <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
-              aspect-ratio="2.75"
-            ></v-img>
+            <v-card-title class="headline mb-0">A Empresa</v-card-title>
+            <v-divider/>
+            <v-card-text>{{ empresa }}</v-card-text>
+            <v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
 
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn icon> <v-icon>favorite</v-icon> </v-btn>
-              <v-btn icon> <v-icon>bookmark</v-icon> </v-btn>
-              <v-btn icon> <v-icon>share</v-icon> </v-btn>
+              <v-btn icon>
+                <v-icon>favorite</v-icon>
+              </v-btn>
+              <v-btn icon>
+                <v-icon>bookmark</v-icon>
+              </v-btn>
+              <v-btn icon>
+                <v-icon>share</v-icon>
+              </v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
-        <v-flex xs12 sm6>
+        <v-flex xs12 sm4>
           <v-card>
-            <v-card-title class="headline mb-0">Subtítulo 2</v-card-title>
-            <v-divider />
-            <v-card-text>{{ card_text_2 }}</v-card-text>
+            <v-card-title class="headline mb-0">Missão</v-card-title>
+            <v-divider/>
+            <v-card-text>{{ missao }}</v-card-text>
+            <v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
+
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn icon>
+                <v-icon>favorite</v-icon>
+              </v-btn>
+              <v-btn icon>
+                <v-icon>bookmark</v-icon>
+              </v-btn>
+              <v-btn icon>
+                <v-icon>share</v-icon>
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-flex>
+        <v-flex xs12 sm4>
+          <v-card>
+            <v-card-title class="headline mb-0">Objetivo</v-card-title>
+            <v-divider/>
+            <v-card-text>{{ objetivo }}</v-card-text>
             <v-img
               src="https://demo.cloudimg.io/width/600/n/https://jolipage.airstore.io/img.jpg"
               aspect-ratio="2.75"
@@ -37,9 +61,15 @@
 
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn icon> <v-icon>favorite</v-icon> </v-btn>
-              <v-btn icon> <v-icon>bookmark</v-icon> </v-btn>
-              <v-btn icon> <v-icon>share</v-icon> </v-btn>
+              <v-btn icon>
+                <v-icon>favorite</v-icon>
+              </v-btn>
+              <v-btn icon>
+                <v-icon>bookmark</v-icon>
+              </v-btn>
+              <v-btn icon>
+                <v-icon>share</v-icon>
+              </v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
@@ -52,10 +82,12 @@
 export default {
   data() {
     return {
-      card_text:
-        "Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat.",
-      card_text_2:
-        "Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat."
+      empresa:
+        "Somos uma AUTOPEÇA que nasceu de uma paixão: o CAMINHÃO. Sabemos como é difícil manter um caminhão transitando diante do alto custo de peças e das condições das estradas do país. As consequências são mais manutenção, mais tempo nas rodovias e menos qualidade de vida para o motorista e sua família. Foi pensando nisso, que nasceu a CONFIA TRUCK PARTS! Uma empresa que visa atender a necessidade deste mercado de maneira mais eficaz e com agilidade no processo de reparo do veículo, através de novas plataformas de negócios. Sempre visando o melhor custo benefício para o mercado que atende esse público. Tudo isso refletindo no bem-estar do caminhoneiro.",
+      missao:
+        "A CONFIA TRUCK PARTS visa atender o consumo de reposição de Autopeças da Linha Pesada com a mesma paixão que temos pelos caminhões. Oferecer peças de alta qualidade, com garantia e primando pela satisfação de nossos clientes e parceiros, sejam ele revendedores ou consumidores finais. Nossa relação com o mercado vai além do ato de comprar e vender, prezamos pelo bem-estar, pela ética e pela transparência.",
+      objetivo:
+        "Ser referência no mercado de AUTOPEÇAS, com reconhecimento de toda cadeia consumidora pela excelência do serviço prestado, desde a necessidade do cliente até a entrega dos produtos ao consumidor final. Nosso principal objetivo é a satisfação dos nossos clientes."
     };
   },
   name: "Sobre"

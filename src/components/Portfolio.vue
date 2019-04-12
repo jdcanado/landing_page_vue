@@ -4,62 +4,71 @@
       <v-layout row wrap>
         <v-flex xs12>
           <v-card>
-            <v-card-title class="headline mb-0"> Portfólio </v-card-title>
+            <v-card-title class="headline mb-0">Portfólio</v-card-title>
           </v-card>
         </v-flex>
         <v-flex xs12 sm4>
           <v-card>
-            <v-card-title class="headline mb-0">Subtítulo 1</v-card-title>
-            <v-divider />
-            <v-card-text>{{ card_text }}</v-card-text>
-            <v-img
-              src="https://picsum.photos/200/300/?image=882"
-              aspect-ratio="1.75"
-            ></v-img>
+            <v-card-title class="headline mb-0">Gestão Com. / Representação</v-card-title>
+            <v-divider/>
+            <v-card-text>{{ gestao_comercial }}</v-card-text>
+            <v-img src="https://picsum.photos/200/300/?image=882" aspect-ratio="1.75"></v-img>
 
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn icon> <v-icon>favorite</v-icon> </v-btn>
-              <v-btn icon> <v-icon>bookmark</v-icon> </v-btn>
-              <v-btn icon> <v-icon>share</v-icon> </v-btn>
+              <v-btn icon>
+                <v-icon>favorite</v-icon>
+              </v-btn>
+              <v-btn icon>
+                <v-icon>bookmark</v-icon>
+              </v-btn>
+              <v-btn icon>
+                <v-icon>share</v-icon>
+              </v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
 
         <v-flex xs12 sm4>
           <v-card>
-            <v-card-title class="headline mb-0">Subtítulo 2</v-card-title>
-            <v-divider />
-            <v-card-text>{{ card_text_2 }}</v-card-text>
-            <v-img
-              src="https://picsum.photos/200/300/?image=885"
-              aspect-ratio="1.75"
-            ></v-img>
+            <v-card-title class="headline mb-0">Distribuição</v-card-title>
+            <v-divider/>
+            <v-card-text>{{ distribuicao }}</v-card-text>
+            <v-img src="https://picsum.photos/200/300/?image=885" aspect-ratio="1.75"></v-img>
 
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn icon> <v-icon>favorite</v-icon> </v-btn>
-              <v-btn icon> <v-icon>bookmark</v-icon> </v-btn>
-              <v-btn icon> <v-icon>share</v-icon> </v-btn>
+              <v-btn icon>
+                <v-icon>favorite</v-icon>
+              </v-btn>
+              <v-btn icon>
+                <v-icon>bookmark</v-icon>
+              </v-btn>
+              <v-btn icon>
+                <v-icon>share</v-icon>
+              </v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
 
         <v-flex xs12 sm4>
           <v-card>
-            <v-card-title class="headline mb-0">Subtítulo 3</v-card-title>
-            <v-divider />
-            <v-card-text>{{ card_text_3 }}</v-card-text>
-            <v-img
-              src="https://picsum.photos/200/300/?image=861"
-              aspect-ratio="1.75"
-            ></v-img>
+            <v-card-title class="headline mb-0">Transportadoras / Frotistas</v-card-title>
+            <v-divider/>
+            <v-card-text>{{ transportadoras_frotistas }}</v-card-text>
+            <v-img src="https://picsum.photos/200/300/?image=861" aspect-ratio="1.75"></v-img>
 
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn icon> <v-icon>favorite</v-icon> </v-btn>
-              <v-btn icon> <v-icon>bookmark</v-icon> </v-btn>
-              <v-btn icon> <v-icon>share</v-icon> </v-btn>
+              <v-btn icon>
+                <v-icon>favorite</v-icon>
+              </v-btn>
+              <v-btn icon>
+                <v-icon>bookmark</v-icon>
+              </v-btn>
+              <v-btn icon>
+                <v-icon>share</v-icon>
+              </v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
@@ -72,12 +81,12 @@
 export default {
   data() {
     return {
-      card_text:
-        "Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat. Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat.",
-      card_text_2:
-        "Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat. Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat.",
-      card_text_3:
-        "Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat. Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat."
+      gestao_comercial:
+        "Cuidamos de todo o processo de venda dos produtos de nossos parceiros, sendo esses oferecidos diretamente ao mercado, reduzindo custos de manutenção da equipe comercial em regiões pré-determinadas pelos clientes.",
+      distribuicao:
+        "O grande diferencial da CONFIA TRUCK PARTS é o centro de armazenamento oferecido aos parceiros. Por estar situada em uma região estratégica (divisa com os estados de Minas Gerais e Mato Grosso do Sul) os clientes podem se beneficiar dessa estrutura para fixar um ponto de apoio ou mesmo redespacho de seus produtos, otimizando a logística e minimizando os custos gerados pela entrega.",
+      transportadoras_frotistas:
+        "Entendemos que muitos frotistas e transportadoras são quem mais “sofrem” com o mercado de reposição de Autopeças. Buscando evitar a formação de estoques próprios, temos condições especiais de parcerias para otimizar o consumo de empresas desse segmento. Resultando em agilidade e baixo custo das manutenções. Afinal, caminhão parado é dinheiro perdido!"
     };
   },
   name: "Portfolio"
