@@ -11,8 +11,8 @@
           <v-card>
             <v-card-title class="headline mb-0">Gestão Com. / Representação</v-card-title>
             <v-divider/>
-            <v-card-text>{{ gestao_comercial }}</v-card-text>
-            <v-img src="https://picsum.photos/200/300/?image=882" aspect-ratio="1.75"></v-img>
+            <v-card-text class="mb-5">{{ gestao_comercial }}</v-card-text>
+            <v-img class="pt-3" src="https://picsum.photos/200/300/?image=882" aspect-ratio="1.75"></v-img>
 
             <v-card-actions>
               <v-spacer></v-spacer>

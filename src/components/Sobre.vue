@@ -32,9 +32,9 @@
           <v-card>
             <v-card-title class="headline mb-0">Missão</v-card-title>
             <v-divider/>
-            <v-card-text>{{ missao }}</v-card-text>
-            <v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
-
+            <v-card-text class="mb-5">{{ missao }}</v-card-text>
+            <v-img class="pt-5" src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.6"></v-img>
+ 
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn icon>
@@ -53,10 +53,8 @@
           <v-card>
             <v-card-title class="headline mb-0">Objetivo</v-card-title>
             <v-divider/>
-            <v-card-text>{{ objetivo }}</v-card-text>
-            <v-img
-              src="https://demo.cloudimg.io/width/600/n/https://jolipage.airstore.io/img.jpg"
-              aspect-ratio="2.75"
+            <v-card-text class="mb-5">{{ objetivo }}</v-card-text>
+            <v-img class="pt-5" src="https://demo.cloudimg.io/width/600/n/https://jolipage.airstore.io/img.jpg" aspect-ratio="1.8"
             ></v-img>
 
             <v-card-actions>
