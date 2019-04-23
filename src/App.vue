@@ -141,8 +141,7 @@ export default {
       axios.post("https://confiatruck-aebb.restdb.io/rest/recipients/**", {
         headers: {
           "content-type": "application/json",
-          "cache-control": "no-cache",
-          "Access-Control-Allow-Origin": "*"
+          "cache-control": "no-cache"
         },
         body: {
           name: this.posts.nome,
