@@ -56,14 +56,14 @@
                         </v-list-tile-action>
 
                         <v-list-tile-content>
-                          <v-list-tile-title>(17) 91234-1234</v-list-tile-title>
+                          <v-list-tile-title>(17) 99198-8261</v-list-tile-title>
                           <v-list-tile-sub-title>Celular/WhatsApp</v-list-tile-sub-title>
                         </v-list-tile-content>
                       </v-list-tile>
                       <v-list-tile>
                         <v-list-tile-action></v-list-tile-action>
                         <v-list-tile-content>
-                          <v-list-tile-title>(17) 4321-1234</v-list-tile-title>
+                          <v-list-tile-title>(17) 99198-8261</v-list-tile-title>
                           <v-list-tile-sub-title>Telefone</v-list-tile-sub-title>
                         </v-list-tile-content>
                       </v-list-tile>
@@ -76,7 +76,7 @@
                         </v-list-tile-action>
 
                         <v-list-tile-content>
-                          <v-list-tile-title>sample@example.com</v-list-tile-title>
+                          <v-list-tile-title>contato@confiatruckparts.com.br</v-list-tile-title>
                           <v-list-tile-sub-title>Email Corporativo</v-list-tile-sub-title>
                         </v-list-tile-content>
                       </v-list-tile>
@@ -89,16 +89,16 @@
                         </v-list-tile-action>
 
                         <v-list-tile-content>
-                          <v-list-tile-title>Rua Celestino Patini, 220</v-list-tile-title>
-                          <v-list-tile-sub-title>Jardim dos Ipês - Nova Aliança/SP - Brasil</v-list-tile-sub-title>
+                          <v-list-tile-title>Endereço</v-list-tile-title>
+                          <v-list-tile-sub-title>Cidade</v-list-tile-sub-title>
                         </v-list-tile-content>
                       </v-list-tile>
 
                       <v-list-tile>
                         <v-list-tile-action/>
                         <v-list-tile-content>
-                          <v-list-tile-title>Rua José Bonifácio, 215</v-list-tile-title>
-                          <v-list-tile-sub-title>Jardim dos Sol - Nova Aliança/SP - Brasil</v-list-tile-sub-title>
+                          <v-list-tile-title>Endereço</v-list-tile-title>
+                          <v-list-tile-sub-title>Brasil</v-list-tile-sub-title>
                         </v-list-tile-content>
                       </v-list-tile>
                     </v-list>

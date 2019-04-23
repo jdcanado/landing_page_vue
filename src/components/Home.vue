@@ -2,7 +2,7 @@
   <div app>
     <v-layout id="home" row wrap>
       <v-flex xs12>
-        <v-carousel hide-delimiters hide-controls height="450">
+        <v-carousel hide-delimiters hide-controls height="400">
           <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src"></v-carousel-item>
         </v-carousel>
       </v-flex>
@@ -17,7 +17,7 @@ export default {
       items: [
         {
           src:
-            "https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/327dade8/src/assets/banner_rotativo.jpg"
+            "https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/04c0c770/src/assets/banner_rotativo2.jpg"
         },
         {
           src:
