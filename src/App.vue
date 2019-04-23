@@ -68,14 +68,14 @@
                 <v-container grid-list-md>
                   <v-layout wrap>
                     <v-flex xs12 sm6>
-                      <v-text-field label="Nome*" v-model="name" required></v-text-field>
+                      <v-text-field label="Nome*" v-model="posts.nome" required></v-text-field>
                     </v-flex>
                     <v-flex xs12 sm6>
-                      <v-text-field label="Email*" v-model="email" required></v-text-field>
+                      <v-text-field label="Email*" v-model="posts.email" required></v-text-field>
                     </v-flex>
                     <v-flex xs12 sm12>
                       <v-textarea
-                        v-model="mensagem"
+                        v-model="posts.mensagem"
                         label="Mensagem*"
                         hint="Deixe sua mensagem"
                         rows="3"
@@ -91,7 +91,7 @@
                   <v-spacer/>
                   <v-icon left dark>close</v-icon>
                 </v-btn>
-                <v-btn color="indigo" flat @click="dialog = false;postNow();">Enviar
+                <v-btn color="indigo" flat @click="postNow">Enviar
                   <v-icon left dark>send</v-icon>
                 </v-btn>
               </v-card-actions>
@@ -127,9 +127,11 @@ export default {
     drawer: false,
     pagina: "Home",
     dialog: false,
-    name: "",
-    email: "",
-    mensagem: ""
+    posts: {
+      nome: "",
+      email: "",
+      mensagem: ""
+    }
   }),
   props: {
     source: String
@@ -142,7 +144,11 @@ export default {
           "x-apikey": "8dae8f8cdf19ffd90a7a2e62609608ac113c2",
           "cache-control": "no-cache"
         },
-        body: { name, email, mensagem }
+        body: {
+          nome: this.posts.nome,
+          email: this.posts.email,
+          mensagem: this.posts.mensagem
+        }
       });
     }
   }
