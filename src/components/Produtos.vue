@@ -11,7 +11,7 @@
               <v-layout row wrap>
                 <v-flex v-for="i in 6" :key="i" xs4>
                   <img
-                    :src="`https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/99c0120f/src/assets/produtos${i}.jpeg`"
+                    :src="`https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/cabd2288/src/assets/produtos_${i}.jpg`"
                     class="image"
                     alt="lorem"
                     width="100%"
