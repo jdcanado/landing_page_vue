@@ -138,19 +138,18 @@ export default {
   },
   methods: {
     postNow() {
-      axios.post("https://confiatruck-aebb.restdb.io/rest/recipients", {
+      axios.post("https://confiatruck-aebb.restdb.io/rest/recipients/**", {
         headers: {
           "content-type": "application/json",
-          "x-apikey": "5cbf13b8f1a9625416024ffa",
           "cache-control": "no-cache",
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, OPTIONS"
+          "Access-Control-Allow-Origin": "*"
         },
         body: {
           name: this.posts.nome,
           email: this.posts.email,
           mensagem: this.posts.mensagem
-        }
+        },
+        json: true
       });
     }
   }
