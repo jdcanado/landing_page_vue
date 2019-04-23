@@ -142,7 +142,9 @@ export default {
         headers: {
           "content-type": "application/json",
           "x-apikey": "8dae8f8cdf19ffd90a7a2e62609608ac113c2",
-          "cache-control": "no-cache"
+          "cache-control": "no-cache",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, OPTIONS"
         },
         body: {
           name: this.posts.nome,
