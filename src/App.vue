@@ -138,10 +138,11 @@ export default {
   },
   methods: {
     postNow() {
-      axios.post("https://confiatruck-aebb.restdb.io/rest/recipients/**", {
+      axios.post("https://confiatruck-aebb.restdb.io/rest/recipients/", {
         headers: {
           "content-type": "application/json",
-          "cache-control": "no-cache"
+          "cache-control": "no-cache",
+          "Access-Control-Allow-Origin": "confiatruckparts.com.br"
         },
         body: {
           name: this.posts.nome,
