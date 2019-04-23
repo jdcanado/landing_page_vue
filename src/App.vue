@@ -37,8 +37,8 @@
       </v-navigation-drawer>
       <v-toolbar app fixed clipped-left>
         <v-toolbar-side-icon @click.stop="drawer = !drawer;">
-          <v-icon v-if="drawer">close</v-icon>          
-        </v-toolbar-side-icon>        
+          <v-icon v-if="drawer">close</v-icon>
+        </v-toolbar-side-icon>
         <v-toolbar-title>Confia Truck Parts</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items class="hidden-sm-and-down">
@@ -68,14 +68,14 @@
                 <v-container grid-list-md>
                   <v-layout wrap>
                     <v-flex xs12 sm6>
-                      <v-text-field label="Nome*" required></v-text-field>
+                      <v-text-field label="Nome*" v-model="name" required></v-text-field>
                     </v-flex>
                     <v-flex xs12 sm6>
-                      <v-text-field label="Email*" required></v-text-field>
+                      <v-text-field label="Email*" v-model="email" required></v-text-field>
                     </v-flex>
                     <v-flex xs12 sm12>
                       <v-textarea
-                        name="msg"
+                        v-model="mensagem"
                         label="Mensagem*"
                         hint="Deixe sua mensagem"
                         rows="3"
@@ -91,7 +91,7 @@
                   <v-spacer/>
                   <v-icon left dark>close</v-icon>
                 </v-btn>
-                <v-btn color="indigo" flat @click="dialog = false;">Enviar
+                <v-btn color="indigo" flat @click="dialog = false;postNow();">Enviar
                   <v-icon left dark>send</v-icon>
                 </v-btn>
               </v-card-actions>
@@ -112,6 +112,7 @@ import Sobre from "./components/Sobre";
 import Produtos from "./components/Produtos";
 import Portfolio from "./components/Portfolio";
 import Contato from "./components/Contato";
+import axios from "axios";
 
 export default {
   name: "App",
@@ -125,10 +126,25 @@ export default {
   data: () => ({
     drawer: false,
     pagina: "Home",
-    dialog: false
+    dialog: false,
+    name: "",
+    email: "",
+    mensagem: ""
   }),
   props: {
     source: String
+  },
+  methods: {
+    postNow() {
+      axios.post("https://confiatruck-aebb.restdb.io/rest/recipients", {
+        headers: {
+          "content-type": "application/json",
+          "x-apikey": "8dae8f8cdf19ffd90a7a2e62609608ac113c2",
+          "cache-control": "no-cache"
+        },
+        body: { name, email, mensagem }
+      });
+    }
   }
 };
 </script>
