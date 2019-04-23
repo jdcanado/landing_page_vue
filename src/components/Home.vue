@@ -2,12 +2,8 @@
   <div app>
     <v-layout id="home" row wrap>
       <v-flex xs12>
-        <v-carousel hide-delimiters hide-controls height="400">
-          <v-carousel-item
-            v-for="(item, i) in items"
-            :key="i"
-            :src="item.src"
-          ></v-carousel-item>
+        <v-carousel hide-delimiters hide-controls height="450">
+          <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src"></v-carousel-item>
         </v-carousel>
       </v-flex>
     </v-layout>
@@ -20,14 +16,17 @@ export default {
     return {
       items: [
         {
-          src: "https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/2e61c89b/src/assets/logo_confia_truck_rotativo.jpg"
+          src:
+            "https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/327dade8/src/assets/banner_rotativo.jpg"
         },
         {
-          src: "https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/46e2970b/src/assets/rotativo1.jpg"
+          src:
+            "https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/46e2970b/src/assets/rotativo1.jpg"
         },
         {
-          src: "https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/46e2970b/src/assets/rotativo2.jpg"
-        }        
+          src:
+            "https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/46e2970b/src/assets/rotativo2.jpg"
+        }
       ]
     };
   },
