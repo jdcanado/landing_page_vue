@@ -9,9 +9,9 @@
             <v-card-text>{{ produto }}</v-card-text>
             <v-container fluid grid-list-sm>
               <v-layout row wrap>
-                <v-flex v-for="i in 9" :key="i" xs4>
+                <v-flex v-for="i in 6" :key="i" xs4>
                   <img
-                    :src="`https://picsum.photos/200/300/?image=${i + 20}`"
+                    :src="`https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/99c0120f/src/assets/produtos${i}.jpeg`"
                     class="image"
                     alt="lorem"
                     width="100%"
