@@ -12,7 +12,11 @@
             <v-card-title class="headline mb-0">Gestão Com. / Representação</v-card-title>
             <v-divider/>
             <v-card-text class="mb-5">{{ gestao_comercial }}</v-card-text>
-            <v-img class="pt-3" src="https://picsum.photos/200/300/?image=882" aspect-ratio="1.75"></v-img>
+            <v-img
+              class="pt-3"
+              src="https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/46e2970b/src/assets/representacao1.png"
+              aspect-ratio="1.75"
+            ></v-img>
 
             <v-card-actions>
               <v-spacer></v-spacer>
@@ -34,7 +38,10 @@
             <v-card-title class="headline mb-0">Distribuição</v-card-title>
             <v-divider/>
             <v-card-text>{{ distribuicao }}</v-card-text>
-            <v-img src="https://picsum.photos/200/300/?image=885" aspect-ratio="1.75"></v-img>
+            <v-img
+              src="https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/46e2970b/src/assets/distribuicao1.jpg"
+              aspect-ratio="1.75"
+            ></v-img>
 
             <v-card-actions>
               <v-spacer></v-spacer>
@@ -56,7 +63,10 @@
             <v-card-title class="headline mb-0">Transportadoras / Frotistas</v-card-title>
             <v-divider/>
             <v-card-text>{{ transportadoras_frotistas }}</v-card-text>
-            <v-img src="https://picsum.photos/200/300/?image=861" aspect-ratio="1.75"></v-img>
+            <v-img
+              src="https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/46e2970b/src/assets/distribuicao3.jpg"
+              aspect-ratio="1.75"
+            ></v-img>
 
             <v-card-actions>
               <v-spacer></v-spacer>

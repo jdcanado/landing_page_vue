@@ -20,16 +20,10 @@ export default {
     return {
       items: [
         {
-          src: "http://wowslider.net/local-sliders/demo-5/data1/images/25h.jpg"
+          src: "https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/46e2970b/src/assets/rotativo1.jpg"
         },
         {
-          src: "http://wowslider.net/local-sliders/demo-5/data1/images/83h.jpg"
-        },
-        {
-          src: "http://wowslider.net/local-sliders/demo-5/data1/images/88h.jpg"
-        },
-        {
-          src: "http://wowslider.net/local-sliders/demo-5/data1/images/114h.jpg"
+          src: "https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/46e2970b/src/assets/rotativo2.jpg"
         }
       ]
     };
