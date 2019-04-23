@@ -91,7 +91,7 @@
                   <v-spacer/>
                   <v-icon left dark>close</v-icon>
                 </v-btn>
-                <v-btn color="indigo" flat @click="postNow">Enviar
+                <v-btn color="indigo" flat @click="postNow();dialog = false;">Enviar
                   <v-icon left dark>send</v-icon>
                 </v-btn>
               </v-card-actions>
@@ -145,7 +145,7 @@ export default {
           "cache-control": "no-cache"
         },
         body: {
-          nome: this.posts.nome,
+          name: this.posts.nome,
           email: this.posts.email,
           mensagem: this.posts.mensagem
         }
