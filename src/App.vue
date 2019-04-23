@@ -37,9 +37,8 @@
       </v-navigation-drawer>
       <v-toolbar app fixed clipped-left>
         <v-toolbar-side-icon @click.stop="drawer = !drawer;">
-          <v-icon v-if="drawer">close</v-icon>
-        </v-toolbar-side-icon>
-        <!--<v-img aspect-ratio="4" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"/>-->
+          <v-icon v-if="drawer">close</v-icon>          
+        </v-toolbar-side-icon>        
         <v-toolbar-title>Confia Truck Parts</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items class="hidden-sm-and-down">

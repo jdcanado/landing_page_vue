@@ -20,11 +20,14 @@ export default {
     return {
       items: [
         {
+          src: "https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/805074f2/src/assets/logo_confia_truck.jpg"
+        },
+        {
           src: "https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/46e2970b/src/assets/rotativo1.jpg"
         },
         {
           src: "https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/46e2970b/src/assets/rotativo2.jpg"
-        }
+        }        
       ]
     };
   },
