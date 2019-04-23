@@ -22,8 +22,8 @@
     },
     {
       "src": ".*",
-      "dest": "/zohoverificar/verifyforzoho.html"
+      "dest": "/index.html"
     }
   ],
-  "alias": "confiatruckparts.com.br"
+  "alias": "www.confiatruckparts.com.br"
 }
