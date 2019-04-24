@@ -142,7 +142,8 @@ export default {
         headers: {
           "content-type": "application/json",
           "cache-control": "no-cache",
-          "Access-Control-Allow-Origin": "confiatruckparts.com.br"
+          "x-apikey": "5cbf13b8f1a9625416024ffa",
+          "Access-Control-Allow-Origin": "*"
         },
         body: {
           name: this.posts.nome,
