@@ -9,7 +9,6 @@
     "now-build": "npm run build"
   },
   "dependencies": {
-    "axios": "latest",
     "vue": "^2.5.22",
     "vuetify": "1.5.4"
   },

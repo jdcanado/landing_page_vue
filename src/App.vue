@@ -91,7 +91,11 @@
                   <v-spacer/>
                   <v-icon left dark>close</v-icon>
                 </v-btn>
-                <v-btn color="indigo" flat @click="postNow();dialog = false;">Enviar
+                <v-btn
+                  color="indigo"
+                  flat
+                  @click="postNow();sendMail();limpar();dialog = false;"
+                >Enviar
                   <v-icon left dark>send</v-icon>
                 </v-btn>
               </v-card-actions>
@@ -112,7 +116,6 @@ import Sobre from "./components/Sobre";
 import Produtos from "./components/Produtos";
 import Portfolio from "./components/Portfolio";
 import Contato from "./components/Contato";
-import axios from "axios";
 
 export default {
   name: "App",
@@ -138,20 +141,56 @@ export default {
   },
   methods: {
     postNow() {
-      axios.post("https://confiatruck-aebb.restdb.io/rest/recipients/", {
-        headers: {
-          "content-type": "application/json",
-          "cache-control": "no-cache",
-          "x-apikey": "5cbf13b8f1a9625416024ffa",
-          "Access-Control-Allow-Origin": "*"
-        },
-        body: {
-          name: this.posts.nome,
-          email: this.posts.email,
-          mensagem: this.posts.mensagem
-        },
-        json: true
+      var xhr = new XMLHttpRequest();
+      xhr.withCredentials = true;
+
+      xhr.addEventListener("readystatechange", function() {
+        if (this.readyState === 4) {
+          console.log(this.responseText);
+        }
       });
+
+      xhr.open("POST", "https://confiatruck-aebb.restdb.io/rest/recipients");
+      xhr.setRequestHeader("content-type", "application/json");
+      xhr.setRequestHeader("x-apikey", "5cbf13b8f1a9625416024ffa");
+      xhr.setRequestHeader("cache-control", "no-cache");
+
+      xhr.send(JSON.stringify(this.posts));
+    },
+    sendMail() {
+      var mail = {
+        to: "contato@confiatruckparts.com.br",
+        subject: "Fale Conosco",
+        html:
+          "<b>Nome:</b> " +
+          this.posts.nome +
+          "<br><b>Email:</b> " +
+          this.posts.email +
+          "<br><b>Mensagem:</b> " +
+          this.posts.mensagem,
+        company: "Confia Truck Parts",
+        sendername: "Website - Confia Truck Parts"
+      };
+      var xhr = new XMLHttpRequest();
+      xhr.withCredentials = true;
+
+      xhr.addEventListener("readystatechange", function() {
+        if (this.readyState === 4) {
+          console.log(this.responseText);
+        }
+      });
+
+      xhr.open("POST", "https://confiatruck-aebb.restdb.io/mail");
+      xhr.setRequestHeader("content-type", "application/json");
+      xhr.setRequestHeader("x-apikey", "5cbf13b8f1a9625416024ffa");
+      xhr.setRequestHeader("cache-control", "no-cache");
+
+      xhr.send(JSON.stringify(mail));
+    },
+    limpar() {
+      this.posts.nome = "";
+      this.posts.email = "";
+      this.posts.mensagem = "";
     }
   }
 };
