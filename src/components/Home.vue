@@ -17,7 +17,7 @@ export default {
       items: [
         {
           src:
-            "https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/456aeff2/src/assets/banner_rotativo2.jpg"
+            "https://cdn.staticaly.com/gh/jdcanado/landing_page_vue/a0f2f456/src/assets/banner_rotativo4.jpg"
         } /*,
         {
           src:
