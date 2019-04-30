@@ -35,7 +35,7 @@
             </v-card-text>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn color="indigo" flat @click="postNow();sendMail();limpar()">Enviar
+              <v-btn color="indigo" flat @click="postNow();limpar()">Enviar
                 <v-icon left dark>send</v-icon>
               </v-btn>
             </v-card-actions>
@@ -57,7 +57,7 @@
                         </v-list-tile-action>
 
                         <v-list-tile-content>
-                          <v-list-tile-title>(17) 99198-8261</v-list-tile-title>
+                          <v-list-tile-title>(17) 99233-0497</v-list-tile-title>
                           <v-list-tile-sub-title>Celular/WhatsApp</v-list-tile-sub-title>
                         </v-list-tile-content>
                       </v-list-tile>
@@ -65,7 +65,7 @@
                         <v-list-tile-action></v-list-tile-action>
                         <v-list-tile-content>
                           <v-list-tile-title>(17) 99198-8261</v-list-tile-title>
-                          <v-list-tile-sub-title>Telefone</v-list-tile-sub-title>
+                          <v-list-tile-sub-title>Telefone/WhatsApp</v-list-tile-sub-title>
                         </v-list-tile-content>
                       </v-list-tile>
 
@@ -90,18 +90,10 @@
                         </v-list-tile-action>
 
                         <v-list-tile-content>
-                          <v-list-tile-title>Endereço</v-list-tile-title>
-                          <v-list-tile-sub-title>Cidade</v-list-tile-sub-title>
+                          <v-list-tile-title>Rua Gotardi, 246 - Centro - Nova Aliança/SP</v-list-tile-title>
+                          <v-list-tile-sub-title>Endereço comercial</v-list-tile-sub-title>
                         </v-list-tile-content>
-                      </v-list-tile>
-
-                      <v-list-tile>
-                        <v-list-tile-action/>
-                        <v-list-tile-content>
-                          <v-list-tile-title>Endereço</v-list-tile-title>
-                          <v-list-tile-sub-title>Brasil</v-list-tile-sub-title>
-                        </v-list-tile-content>
-                      </v-list-tile>
+                      </v-list-tile>                      
                     </v-list>
                   </v-flex>
                 </v-layout>
