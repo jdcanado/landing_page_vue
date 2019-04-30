@@ -94,7 +94,7 @@
                 <v-btn
                   color="indigo"
                   flat
-                  @click="postNow();sendMail();limpar();dialog = false;"
+                  @click="postNow();limpar();dialog = false;"
                 >Enviar
                   <v-icon left dark>send</v-icon>
                 </v-btn>
